@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - size  oversize files
+ * main - size  oversize files
  *
  * Return: always 0 success
  */

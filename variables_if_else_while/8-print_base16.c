@@ -8,12 +8,12 @@
 
 int main(void)
 {
+char ab = 'a';
 char ch = 48;
 for (; ch < 58; ch++)
 {
 putchar(ch);
 }
-char ab = 'a';
 for (; ab <= 'f'; ab++)
 {
 putchar(ab);

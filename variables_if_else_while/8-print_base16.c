@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
-* main - prints all the numbers of base 16 in lowercase
-* return: always success (0)
-*/
+ * main - prints all the numbers of base 16 in lowercase
+ *
+ * return: always success (0)
+ */
 
-int mani(void)
+int main(void)
 {
 char ch = 48;
 for (; ch < 58; ch++)
@@ -18,5 +19,5 @@ for (; ab <= 'f'; ab++)
 putchar(ab);
 }
 putchar('\n');
-return 0;
+return (0);
 }

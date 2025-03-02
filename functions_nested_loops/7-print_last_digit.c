@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * print_last_digit - to print last digit
+ * @a : taking integer value
  * Return: Always 0.
  */
-int main(void)
+int print_last_digit(int a)
 {
-	jack_bauer();
-	return (0);
+	int b = a % 10;
+
+	if (a < 0)
+		b = b * -1;
+	_putchar(b + '0');
+	return (b);
 }

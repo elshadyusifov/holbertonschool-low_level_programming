@@ -12,8 +12,10 @@ int j;
 for (i = 0; i < 10; i++)
 {
 for (j = 0; j < 15; j++)
-_putchar(j);
+{
+if (j>9)
+_putchar(j / 10 + '0');
 }
-_putchar(i);
+_putchar(i % 10 + '0');
 _putchar('\n');
 }

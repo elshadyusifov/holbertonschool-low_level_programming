@@ -12,7 +12,7 @@ void print_most_numbers(void)
 {
 char numbers[] = "0123456789";
 int i = 0;
-while (numbers[i] != '\0')
+for (numbers[i] != '\0')
 if (numbers[3] != 2 && numbers[5] != 4)
 _putchar(numbers[i]);
 i++;

@@ -4,9 +4,9 @@
 
 /**
  * create_array - main funsiyasini bildirir
- * @size: add your sizeof
+ * @size: size of massive
  * @c: give your character
- * Return: (arr) is true,
+ * Return: Array (success),
  * otherwise is NULL
  */
 
@@ -21,8 +21,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-unsigned int i;
-		for (i = 0; i < size; i++)
+		for (unsigned int i = 0; i < size; i++)
 	{
 		arr[i] = c;
 	}
@@ -36,20 +35,19 @@ unsigned int i;
 
 int main(void)
 {
-	unsigned int size = 98;
-	char c = 'H';
-	char *arr = create_array(size, c);
+        unsigned int size = 98;
+        char c = 'H';
+        char *arr = create_array(size, c);
 
-	if (arr == NULL)
-	{
-		return (1);
-	}
-unsigned int i;
-	for (i = 0; i < size; i++)
-	{
-		_putchar(arr[i]);
-	}
-	_putchar('\n');
-	free(arr);
-	return (0);
+        if (arr == NULL)
+        {
+                return (1);
+        }
+        for (unsigned int i = 0; i < size; i++)
+        {
+                _putchar(arr[i]);
+        }
+        _putchar('\n');
+        free(arr);
+        return (0);
 }

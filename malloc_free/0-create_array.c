@@ -3,40 +3,47 @@
 #include "main.h"
 
 /**
- * create_array - is main funcsion
- * @size: give your argument
+ * create_array - main funsiyasini bildirir
+ * @size: add your sizeof
  * @c: give your character
- * @_putchar: is on the main file
- * return: 0 always successful
+ * Return: (arr) is true,
+ * otherwise is NULL
  */
 
 char *create_array(unsigned int size, char c)
 {
-	if(size == 0)
+	if (size == 0)
 	{
 		return (NULL);
 	}
-	char *arr = (char*)malloc(size * sizeof(char));
-		if(arr == NULL)
+	char *arr = (char *)malloc(size * sizeof(char));
+		if (arr == NULL)
 	{
 		return (NULL);
 	}
-	for(unsigned int i = 0; i < size; i++)
+	for (unsigned int i = 0; i < size; i++)
 	{
 		arr[i] = c;
 	}
 	return (arr);
 }
-int main()
+
+/**
+ * main - starting point of program
+ * Return: always (0) successful
+ */
+
+int main(void)
 {
 	unsigned int size = 98;
 	char c = 'H';
 	char *arr = create_array(size, c);
-	if(arr == NULL)
+
+	if (arr == NULL)
 	{
 		return (1);
 	}
-	for(unsigned int i = 0; i < size; i++)
+	for (unsigned int i = 0; i < size; i++)
 	{
 		_putchar(arr[i]);
 	}

@@ -27,27 +27,3 @@ char *create_array(unsigned int size, char c)
 	}
 	return (arr);
 }
-
-/**
- * main - starting point of program
- * Return: always (0) successful
- */
-
-int main(void)
-{
-        unsigned int size = 98;
-        char c = 'H';
-        char *arr = create_array(size, c);
-
-        if (arr == NULL)
-        {
-                return (1);
-        }
-        for (unsigned int i = 0; i < size; i++)
-        {
-                _putchar(arr[i]);
-        }
-        _putchar('\n');
-        free(arr);
-        return (0);
-}

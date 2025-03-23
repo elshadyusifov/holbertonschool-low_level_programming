@@ -35,7 +35,7 @@ ol++;
 	d->owner = malloc(ol * sizeof(char));
 	if (d->owner == NULL)
 	{
-		free(d->owner);
+		free(d->name);
 		free(d);
 		return (NULL);
 	}
